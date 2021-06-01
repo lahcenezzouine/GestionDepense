@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">GestionDepense</string>
+    <string name="nav_header_title">Lahcen EZZOUINE</string>
+    <string name="nav_header_subtitle">ezzouine.lahcen@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Dépenses</string>
+    <string name="menu_categories">Catégories</string>
+</resources>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".AjoutDepenseActivity"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:padding="5dp"
+                android:text="Categorie"/>
+            <Spinner
+                android:id="@+id/spinner_categories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:layout_centerInParent="true">
+            </Spinner>
+        </LinearLayout>
+        <EditText
+            android:id="@+id/txt_descriptionDepense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Description depense"/>
+        <EditText
+            android:id="@+id/txt_montant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Montant depense"/>
+
+        <EditText
+            android:id="@+id/txt_dateDepense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Date depense"
+            android:focusable="false"
+            android:cursorVisible="false"
+            android:focusableInTouchMode="true"
+            android:drawableLeft="@android:drawable/ic_menu_my_calendar"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Annuler"
+            android:id="@+id/btn_cancel"
+            android:layout_weight="50"
+            android:layout_margin="8dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Valider"
+            android:id="@+id/btn_add"
+            android:layout_weight="50"
+            android:layout_margin="8dp"/>
+
+    </LinearLayout>
+    </LinearLayout>
+</ScrollView>
